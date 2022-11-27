@@ -11,9 +11,9 @@ let redirect_uri = "";
    * 获取redirect_uri
    * @param req
    */
-const getRedirect = (req: any) => {
-    const protocol = req.headers["x-forwarded-proto"] || "http";
-    const redirect = protocol + "://" + req.headers.host;
+   const getRedirect = (req: any) => {
+
+    const redirect = "https" + "://" + req.headers.host;
     redirect_uri = redirect;
   };
 

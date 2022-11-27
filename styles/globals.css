@@ -81,3 +81,26 @@ a {
   color: #000000;
   margin-left: 50px;
 }
+
+.table{
+  margin: 0 5%;
+  border: none;
+}
+.file_a{
+  color: #1890ff;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+}
+.container{
+  padding-top:10vh;
+}
+
+.footer{
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

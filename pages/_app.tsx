@@ -2,7 +2,6 @@ import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import 'antd/dist/antd.css'
 import Head from "next/head";
-import styles from "@/styles/home.module.css";
 
 const App = ({ Component, pageProps }: AppProps) =>{
   return (
@@ -13,7 +12,7 @@ const App = ({ Component, pageProps }: AppProps) =>{
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Component {...pageProps} />
-      <footer className={styles.footer}>Powered by AttractiveBoy</footer>
+      <footer className="footer">Powered by AttractiveBoy</footer>
     </>
   );
 }

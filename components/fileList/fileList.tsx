@@ -1,6 +1,5 @@
 import React from "react";
 import { DatePicker, Statistic, Table } from "antd";
-import styles from "./fileList.module.css";
 import moment from "moment";
 import Column from "antd/lib/table/Column";
 
@@ -11,11 +10,11 @@ interface Props {
 const CommonList = (props: Props) => {
   const { dataSource } = props;
   return (
-    <div className={styles.container}>
+    <div className="container">
       {/* 标题 FILESHARE*/}
       {/* <PageHeader title="FileShare" className="PageHeader" /> */}
       <Table
-        className={styles.table}
+        className="table"
         dataSource={dataSource}
         scroll={{ y: 500 }}
         rowKey={(record) => record.id}
@@ -26,7 +25,7 @@ const CommonList = (props: Props) => {
           key="name"
           render={(text, record: any) => (
             // 获取当前页面的路由
-            <a className={styles.file_a} onClick={() => {
+            <a className="file_a" onClick={() => {
               window.location.href = window.location.href + '/' + record.name;
             }}>
               {text}
